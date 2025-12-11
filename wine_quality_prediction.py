@@ -100,7 +100,7 @@ def main():
     # Using Random Forest, which is generally more robust than a single Decision Tree,
     # and applying 'balanced' class weights to mitigate the effect of data imbalance.
     model = RandomForestClassifier(
-        n_estimators=200,      # More trees for better stability
+        n_estimators=200,      # More trees for better stability(200 trees#
         random_state=RANDOM_SEED,
         class_weight='balanced', # Crucial for handling imbalanced classes
         n_jobs=-1
